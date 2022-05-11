@@ -11,11 +11,13 @@ body{
 nav{
     display: flex;
     justify-content: space-between; /* فصل بين العناصر */
-    max-width: 1366px;
+    max-width: 1519px;
     height: 10vh;
     margin: 0 auto;
     padding: 0 5rem;
-    align-items: center /* العناصر في المنتصف تماما */
+    align-items: center;
+    background-color:#ffffff;
+
 }
 
 nav .logo{
@@ -31,17 +33,21 @@ nav .logo h4{
     font-family: 'Lalezar', cursive;
 
 }
+
+/* title-items */
 nav .nav-items{
     display: flex;
     list-style-type: none;
 }
 nav .nav-items .nav-item{
     padding: 0 1rem;
+
 }
 nav .nav-items .nav-link{
     text-decoration: none;
     color: #4e547e;
     font-size:1.4rem;
+
 }
 nav .nav-items .nav-link:hover{
     color: #6e0aef;
@@ -50,7 +56,7 @@ nav .nav-items .nav-link:hover{
 /* hero section */
 
 .hero{
-    background-color: #f8f7fc;
+    background-color: #9c8be0;
 }
 .hero-section{
     max-width: 1366px;
@@ -193,19 +199,16 @@ section.features {
   .phone img {
     margin-bottom: 1rem;
   }
-  
-  .phone img:hover {
-    scale: 1.1;
-  }
-  .phone h3 {
+
+  .phone b {
     font-size: 1.6rem;
   }
   
-  .phones-section button {
+  /* .phones-section button {
     width: 15rem;
     margin-bottom: 1rem;
     align-self: center;
-  } 
+  }  */
   footer{
       background-color:#f8f7fc;
       height: 15vh;
@@ -233,4 +236,95 @@ section.features {
 .footer-section .socials i:hover{
     color:#6e0aef;
     cursor:pointer;
+}
+
+/* responsive designe*/
+
+@media(max-width:861px){
+  *{
+    font-size:medium;
+  }
+  }
+@media(max-width:797px){
+  *{
+    font-size:smaller;
+  }
+  }
+
+  @media(max-width:670px){
+    *{
+      font-size:x-small;
+    }
+    }
+  @media(max-width:570px){
+    *{
+      font-size:xx-small;
+    }
+    .newest-phones .phones-section .phones{
+      display:flex;  
+      flex-wrap: wrap;
+      justify-content: space-between
+    }
+  }
+  @media(max-width:486px){
+    .features .features-section .qualities{
+      display:flex;  
+      flex-wrap: wrap;
+
+    }
+    .newest-phones .phones-section .phones{
+      display:flex;  
+      flex-wrap: wrap;
+    }
+    .hero .hero-section .hero-img{
+      display:none;
+    }
+  }
+  @media(max-width:433px){
+    .features .features-section .qualities{
+      display:flex;  
+      flex-wrap: wrap;
+      justify-content:center;
+
+    }
+    .newest-phones .phones-section .phones{
+      display:flex;  
+      flex-wrap: wrap;
+      justify-content:center;
+    }
+  }
+@media(max-height:600px){
+  *{
+    font-size:90%;
+  }
+}
+@media(max-height:550px){
+  *{
+    font-size:85%;
+  }
+}
+@media(max-height:500px){
+  *{
+    font-size:80%;
+  }
+}
+@media(max-height:450px){
+  *{
+    font-size:75%;
+  }
+}
+@media(max-height:400px){
+  *{
+    font-size:70%;
+  }
+}
+@media(max-height:350px){
+  *{
+    font-size:65%;
+  }
+}
+@media(max-height:300px){
+  *{
+    font-size:60%;
+  }
 }
