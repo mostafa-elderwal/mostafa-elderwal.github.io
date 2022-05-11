@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@300;400;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between; /* فصل بين العناصر */
+    max-width: 1519px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 5rem;
+    align-items: center; /* العناصر في المنتصف تماما */
+}
+
+nav .logo{
+    display:flex;
+    font-size:2rem;
+    align-items:center;
+}
+nav .logo i{
+    color: #6e0aef;
+    padding-left:0.75rem;
+}
+nav .logo h4{
+    font-family: 'Lalezar', cursive;
+}
+
+/* title-items */
+nav .nav-items{
+    display: flex;
+    list-style-type: none;
+}
+nav .nav-items .nav-item{
+    padding: 0 1rem;
+}
+nav .nav-items .nav-link{
+    text-decoration: none;
+    color: #4e547e;
+    font-size:1.4rem;
+}
+nav .nav-items .nav-link:hover{
+    color: #6e0aef;
+}
+/* hero-section */
+.hero{
+  background-color: rgb(246, 246, 228);
+}
+.hero-section{
+    max-width: 1366px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.hero-section .content{
+    display:flex;
+    flex-direction:column;
+}
+.content b{
+  color:#ef970a;
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+.content h1{
+    font-size: 2.6rem;
+    margin-bottom:1rem;
+}
+.content p{
+  color:rgb(28, 28, 28);
+  font-size: 1.4rem;
+}
+.content p span{
+  color:#e97a39;
+}
+/* apple-phones */
+
+
+.newest-phones {
+   background-color:#f8f7fc;
+    padding-top: 5rem;
+}
+  
+  .newest-phones .phones-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .phones-section h4 {
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .phones-section .phones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-start;
+  }
+  
+  .phones .phone {
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .phone img {
+    margin-bottom: 1rem;
+  }
+
+  .phone b {
+    font-size: 1.6rem;
+  }
+.phone .discount{
+  display:flex;
+}
+.discount span{
+font-size:small;
+}
+.discount p{
+font-size:large;
+}
+  /* airpods */
+
+  .newest-airpods {
+    padding-top: 5rem;
+  }
+  
+  .newest-airpods .airpods-section {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .airpods-section h4 {
+    color: #6e0aef;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .airpods-section .airpods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-start;
+  }
+  
+  .airpods .airpod {
+    margin: 2rem 0;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .airpod img {
+    margin-bottom: 1rem;
+  }
+
+  .airpods b {
+    font-size: 1.6rem;
+  }
+  /* footer */
+  footer{
+    background-color:#f8f7fc;
+    height: 15vh;
+    margin-top:5rem;
+    padding: 2rem 0;
+
+}
+.footer-section{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 1366px;
+   margin: 0 auto;
+   padding: o 5rem;
+
+}
+.footer-section p {
+   font-size:1.2rem;
+   margin-bottom:1rem;
+}
+.footer-section .socials i{
+  padding: 0 0.5rem;
+  font-size: 1.6rem;
+}
+.footer-section .socials i:hover{
+  color:#6e0aef;
+  cursor:pointer;
+}
+@media(max-width:776px){
+ *{
+  font-size:medium;  
+ }
+ .hero .hero-section .hero-img{
+   display:none;
+ }
+}
+@media(max-width:714px){
+ *{
+   font-size:smaller;  
+  }
+}
+@media(max-width:666px){
+ *{
+   font-size:x-small;  
+  }
+  .newest-phones .phones-section .phones{
+    display:flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  .newest-airpods .airpods-section .airpods{
+    display:flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+}
+@media(max-width:500px){
+ *{
+   font-size:xx-small;  
+  }
+  .newest-phones .phones-section .phones{
+    display:flex;  
+    flex-wrap: wrap;
+    justify-content:center;
+}
+  .newest-airpods .airpods-section .airpods{
+    display:flex;  
+    flex-wrap: wrap;
+    justify-content:center;
+}
+}
